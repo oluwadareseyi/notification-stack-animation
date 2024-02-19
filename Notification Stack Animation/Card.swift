@@ -150,7 +150,7 @@ struct Card: View {
             .frame(width: 330, height: 330)
 //            .background(color)
             .clipShape(RoundedRectangle(cornerRadius: 40, style: .continuous))
-            .rotation3DEffect(.degrees(getRotation(topCard: topCard, index: index)), axis: (x: 0, y: 1, z: 0)) // Vertical dragging tilts along X Axis
+            .rotation3DEffect(.degrees(getRotation(topCard: topCard, index: index)), axis: (x: 0, y: 1, z: 0)) // Horizontal dragging tilts along Y Axis
             .scaleEffect(sizeScale(topCard: topCard, index: index))
             .position(x: dragTranslation.width, y: UIScreen.main.bounds.height-200)
             .zIndex(zIndex)
